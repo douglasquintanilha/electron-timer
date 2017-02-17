@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+.container{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 20px;
+}
+.container p {
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.titulo{
+    font-size: 45px;
+}
+
+.timer{
+    font-size: 60px;
+}
+
+.curso{
+    font-size: 30px;
+}
+
+.btn{
+    padding: 14px 20px;
+    border: 0;
+    background: #009BDD;
+    font-size: 20px;
+    border-radius: 3px;
+    color: white;
+}
+
+.btn#botao-parar{
+    background-color: #F1634B;
+}
+
+.adicionar-curso{
+    margin-top: 20px;
+}
+.adicionar-curso .btn{
+    padding: 10px 14px;
+    background: #00C86F;
+}
+
+#campo-curso{
+    vertical-align: top;
+    height: 38px;
+    width: 200px;
+    font-size: 20px;
+}
