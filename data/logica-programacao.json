@@ -1,34 +1,4 @@
-[
-  {
-    "data": "Tue Feb 14 2017 18:00:56 GMT-0200 (BRST)",
-    "tempo": "00:00:03"
-  },
-  {
-    "data": "Wed Feb 15 2017 15:17:19 GMT-0200 (BRST)",
-    "tempo": "00:00:18"
-  },
-  {
-    "data": "Wed Feb 15 2017 17:11:51 GMT-0200 (BRST)",
-    "tempo": "00:00:06"
-  },
-  {
-    "data": "Thu Feb 16 2017 14:37:02 GMT-0200 (BRST)",
-    "tempo": "00:00:05"
-  },
-  {
-    "data": "Thu Feb 16 2017 14:49:50 GMT-0200 (BRST)",
-    "tempo": "00:00:04"
-  },
-  {
-    "data": "Thu Feb 16 2017 15:27:33 GMT-0200 (BRST)",
-    "tempo": "00:00:18"
-  },
-  {
-    "data": "Thu Feb 16 2017 15:36:21 GMT-0200 (BRST)",
-    "tempo": "00:08:45"
-  },
-  {
-    "data": "Thu Feb 16 2017 15:45:35 GMT-0200 (BRST)",
-    "tempo": "00:00:00"
-  }
-]
+{
+  "ultimoEstudo": "Tue Feb 21 2017 15:34:36 GMT-0300 (BRT)",
+  "tempo": "00:00:13"
+}

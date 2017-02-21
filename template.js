@@ -1,3 +1,5 @@
+var dataManager = require('./data');
+
 module.exports =   {
     templateInicial: null,
     createMenuTemplate(sobreWin){
@@ -52,37 +54,39 @@ module.exports =   {
             {
                 label: curso,
                 type: 'radio',
+                checked: true,
                 click () { win.send('curso-trocado', curso) }
             }
         );
+
+        dataManager.addCourseToFile(curso);
         return this.templateInicial;
     },
-    createTrayTemplate(win){
+    createTrayTemplate(win, cb){
         let template = [
             {
                 label: 'Cursos'
             },
             {
                 type: 'separator'
-            },
-            {
-                label: 'introducao-ao-javascript',
-                type: 'radio',
-                click () { win.send('curso-trocado', 'introducao-ao-javascript') }
-            },
-            {
-                label: 'java-oo',
-                type: 'radio',
-                click () { win.send('curso-trocado', 'java-oo') }
-            },
-            {
-                label: 'php-e-mysql',
-                type: 'radio',
-                click () { win.send('curso-trocado', 'php-e-mysql') }
             }
         ];
-        this.templateInicial = template;
-        return template;
+        dataManager.getCoursesFromFile()
+            .then((courses) => {
+                courses.forEach((course) => {
+                    let trayItem = {};
+                    trayItem.label = course,
+                    trayItem.type = 'radio',
+                    trayItem.click = () => {
+                        win.send('curso-trocado', course)
+                    }
+                    template.push(trayItem);
+                });
+                this.templateInicial = template;
+                cb(template);
+            }).catch((err) => {
+                console.log(err);
+            });
     }
 
 }

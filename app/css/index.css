@@ -54,3 +54,9 @@
     width: 200px;
     font-size: 20px;
 }
+
+#icone-config{
+    width: 42px;
+    position: absolute;
+    left: 20px;
+}

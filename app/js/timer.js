@@ -5,8 +5,8 @@ let segundos = 0;
 
 module.exports = {
     iniciar(el){
-        el.innerHTML = "00:00:00";
-        segundos = 0;
+        let time = moment.duration(el.innerHTML);
+        segundos = time.asSeconds();    
         clearInterval(timer);
         timer = setInterval(() => {
             segundos++;
